@@ -1,0 +1,17 @@
+---
+layout: page
+title: News from the track
+nav: news
+permalink: /news/
+---
+<div class="news">
+{% for post in site.posts %}
+  <article class="post">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <div class="body">{{ post.content }}</div>
+  </article>
+{% else %}
+  <p class="empty">No news yet. Check back after the next game.</p>
+{% endfor %}
+</div>

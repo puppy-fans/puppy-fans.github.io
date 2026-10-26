@@ -1,0 +1,6 @@
+# Optional captions for gallery photos.
+# Use the photo's exact file name, then a colon, then the caption in quotes.
+# Photos without a line here simply show with no caption.
+#
+# Example:
+# first-game.jpg: "My first B Team game"

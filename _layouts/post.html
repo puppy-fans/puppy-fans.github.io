@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<main class="page">
+  <article class="post single">
+    <p><a class="back" href="{{ '/news/' | relative_url }}">All news</a></p>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    <h2 class="post-title">{{ page.title }}</h2>
+    <div class="body">{{ content }}</div>
+  </article>
+</main>

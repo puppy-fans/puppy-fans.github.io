@@ -1,0 +1,13 @@
+# Site settings
+title: "Puppy Panic #847"
+description: "Fan page for Puppy Panic, #847 for Birmingham Roller Derby's B Team."
+lang: en-GB
+
+# If your site lives at https://USERNAME.github.io/REPO-NAME/ set baseurl to "/REPO-NAME".
+# If the repo is named USERNAME.github.io, leave it as "".
+baseurl: ""
+
+permalink: /news/:year/:month/:title/
+markdown: kramdown
+exclude:
+  - README.md

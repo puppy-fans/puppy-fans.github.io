@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="kicker">Birmingham Roller Derby, B Team</p>
+      <h1 class="name" aria-label="Puppy Panic"><span>Puppy</span><span>Panic</span></h1>
+      <div class="armband" aria-label="Number 847">847</div>
+    </div>
+    <figure class="portrait">
+      <img class="shot" src="{{ '/assets/img/headshot.webp' | relative_url }}" alt="Puppy Panic in Birmingham Roller Derby kit">
+      <img class="crest" src="{{ '/assets/img/brd-crest.webp' | relative_url }}" alt="Birmingham Roller Derby crest">
+    </figure>
+  </div>
+</header>
+<main>
+  <section aria-labelledby="bio-h">
+    <h2 id="bio-h">The skater</h2>
+    <div class="bio-grid">
+      <div class="bio-text">{{ content }}</div>
+      <aside class="card" aria-label="Skater facts">
+        <dl>
+          <dt>Number</dt><dd>847</dd>
+          <dt>League</dt><dd>Birmingham Roller Derby</dd>
+          <dt>Team</dt><dd>B Team</dd>
+          <dt>Came up through</dt><dd>BRD Academy</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</main>
