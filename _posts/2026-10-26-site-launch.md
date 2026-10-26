@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my fan page"
+title: "Welcome to our fan page"
 ---
 
-This is where I’ll post game recaps, new skills and what’s coming up next for the B Team.
+This is where we’ll post game recaps, write about Puppy Panic's exploits, and give you all the hot goss!.
