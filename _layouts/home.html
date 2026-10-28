@@ -14,25 +14,26 @@ layout: default
     </figure>
   </div>
 </header>
+{% assign sections = content | split: "<!-- why-section -->" %}
+{% assign why = sections[1] | strip %}
 <main>
   <section aria-labelledby="bio-h">
     <h2 id="bio-h">The skater</h2>
     <div class="bio-grid">
-      <div class="bio-text">{{ content }}</div>
+      <div class="bio-text">{{ sections[0] }}</div>
       <aside class="card" aria-label="Skater facts">
         <dl>
-          <dt>Number</dt><dd>847</dd>
-          <dt>Pronouns</dt><dd>It/Its</dd>
-          <dt>League</dt><dd>Birmingham Roller Derby</dd>
-          <dt>Team</dt><dd>B Team</dd>
+          {% for fact in page.facts %}
+          <dt>{{ fact[0] }}</dt><dd>{{ fact[1] }}</dd>
+          {% endfor %}
         </dl>
       </aside>
     </div>
   </section>
-  {% if page.why %}
+  {% if why != "" %}
   <section class="why" aria-labelledby="why-h">
     <h2 id="why-h">Why do we love Puppy Panic?</h2>
-    <div class="why-text">{{ page.why | markdownify }}</div>
+    <div class="why-text">{{ why }}</div>
   </section>
   {% endif %}
 </main>
