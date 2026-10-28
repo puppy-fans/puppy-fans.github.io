@@ -77,6 +77,12 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,6vw,3rem);lin
 .card dt{color:var(--muted);font-size:.95rem}
 .card dd{margin:0;font-weight:800}
 
+/* why we love */
+.why-text{max-width:62ch;font-size:1.15rem}
+.why-text p,.bio-text p{margin:0 0 1.1em;padding-left:1.1rem;border-left:4px solid var(--mint)}
+.why-text p:nth-child(3n+2),.bio-text p:nth-child(3n+2){border-left-color:var(--gold)}
+.why-text p:nth-child(3n),.bio-text p:nth-child(3n){border-left-color:var(--purple)}
+
 /* news */
 .news{max-width:720px}
 .post{padding:1.5rem 0;border-top:2px solid var(--line)}
